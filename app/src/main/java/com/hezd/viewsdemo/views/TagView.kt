@@ -1,12 +1,10 @@
 package com.hezd.viewsdemo.views
 
 import android.content.Context
-import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
 import android.util.AttributeSet
-import android.view.View
-import android.widget.TextView
+import androidx.appcompat.widget.AppCompatTextView
 import com.hezd.viewsdemo.R
 import kotlin.random.Random
 
@@ -15,7 +13,7 @@ import kotlin.random.Random
  *@author hezd
  *Create on 2021/12/23 15:17
  */
-class TagView(context: Context?, attrs: AttributeSet?) : TextView(context, attrs) {
+class TagView(context: Context, attrs: AttributeSet?) : AppCompatTextView(context, attrs) {
     private val colorList = arrayListOf(
         Color.BLACK, Color.BLUE, Color.GREEN
     )

@@ -23,7 +23,6 @@ class FlowLayout(context: Context, attrs: AttributeSet) : ViewGroup(context, att
     }
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
-
         // Flowlayout测量尺寸
         var finalHeight = 0
         var finalWidth = 0
@@ -63,7 +62,10 @@ class FlowLayout(context: Context, attrs: AttributeSet) : ViewGroup(context, att
         finalHeight += maxLineHeight
 
         // 保存测量高度
-        setMeasuredDimension(finalWidth, finalHeight)
+        setMeasuredDimension(
+            resolveSize(finalWidth, widthMeasureSpec),
+            resolveSize(finalHeight, heightMeasureSpec)
+        )
     }
 
     private fun getDefaultUsedWidth() = paddingLeft + paddingRight
