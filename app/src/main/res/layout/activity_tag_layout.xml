@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.hezd.flowlayout.FlowLayout
+            android:id="@+id/tag_layout"
+            app:itemSpacing="10dp"
+            app:lineSpacing="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+                        <TextView
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tag_bg"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                            android:textAllCaps="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tag_bg"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="bbbbb"
+                            android:textAllCaps="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tag_bg"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="dddd"
+                            android:textAllCaps="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tag_bg"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="eeeeee"
+                            android:textAllCaps="true" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tag_bg"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+                            android:textAllCaps="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tag_bg"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="Nnnnnnnnnnnnn" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tag_bg"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="oo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tag_bg"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="pp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tag_bg"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="qq" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tag_bg"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="qq" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tag_bg"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="qq" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tag_bg"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="qq" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tag_bg"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="qq" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tag_bg"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="qq" />
+
+
+        </com.hezd.flowlayout.FlowLayout>
+<!--        <com.hezd.viewsdemo.views.FlowLayout-->
+<!--            app:layout_constraintLeft_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tag_layout"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="15dp"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            >-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/tag_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="15dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="aa"-->
+<!--                android:textAllCaps="true" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/tag_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="15dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="bbbbb"-->
+<!--                android:textAllCaps="true" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/tag_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="15dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="dddd"-->
+<!--                android:textAllCaps="true" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/tag_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="15dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="eeeeee"-->
+<!--                android:textAllCaps="true" />-->
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/tag_bg"-->
+<!--                android:ellipsize="end"-->
+<!--                android:gravity="center"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="15dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"-->
+<!--                android:textAllCaps="true" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/tag_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="15dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="Nnnnnnnnnnnnn" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/tag_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="15dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="oo" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/tag_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="15dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="pp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/tag_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="15dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="qq" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/tag_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="15dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="qq" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/tag_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="15dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="qq" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/tag_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="15dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="qq" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/tag_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="15dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="qq" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/tag_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="15dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="qq" />-->
+
+<!--        </com.hezd.viewsdemo.views.FlowLayout>-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

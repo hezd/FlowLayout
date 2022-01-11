@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/hezd/Android/demo/FlowLayout/app/src/main/res/layout/activity_tag_layout.xml" value="0.22" />
+        <entry key="..\:/hezd/Android/demo/FlowLayout/app/src/main/res/layout/scroll_view_nested_listview_activity.xml" value="0.17916666666666667" />
+        <entry key="..\:/hezd/Android/demo/ViewsDemo/app/src/main/res/drawable/tag_bg.xml" value="0.1953125" />
+        <entry key="..\:/hezd/Android/demo/ViewsDemo/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/hezd/Android/demo/ViewsDemo/app/src/main/res/layout/activity_tag_layout.xml" value="0.22" />
+        <entry key="..\:/hezd/Android/demo/ViewsDemo/app/src/main/res/layout/scroll_view_nested_listview_activity.xml" value="0.17916666666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
