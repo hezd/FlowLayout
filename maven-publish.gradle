@@ -1,0 +1,106 @@
+
+apply plugin: 'maven-publish'
+apply plugin: 'signing'
+
+File mavenConfigFile = project.rootProject.file("maven.properties")
+Properties mavenProperties = new Properties()
+mavenProperties.load(new FileInputStream(mavenConfigFile))
+def GROUP_ID = mavenProperties.getProperty("GROUP_ID")
+def ARTIFACT_ID = mavenProperties.get("ARTIFACT_ID")
+def VERSION_NAME = mavenProperties.get("VERSION_NAME")
+def POM_DESCRIPTION = mavenProperties.get("POM_DESCRIPTION")
+def POM_URL = mavenProperties.get("POM_URL")
+def POM_DEVELOPER_ID = mavenProperties.get("POM_DEVELOPER_ID")
+def POM_DEVELOPER_NAME = mavenProperties.get("POM_DEVELOPER_NAME")
+def POM_DEVELOPER_EMAIL = mavenProperties.get("POM_DEVELOPER_EMAIL")
+def POM_SCM_CONNECTION = mavenProperties.get("POM_SCM_CONNECTION")
+def POM_SCM_DEV_CONNECTION = mavenProperties.get("POM_SCM_DEV_CONNECTION")
+def POM_SCM_GIT_BRANCH = mavenProperties.get("POM_SCM_GIT_BRANCH")
+def MAVEN_PRO_URL = mavenProperties.get("MAVEN_PRO_URL")
+def MAVEN_PRO_USERNAME = mavenProperties.get("MAVEN_PRO_USERNAME")
+def MAVEN_PRO_PASSWORD = mavenProperties.get("MAVEN_PRO_PASSWORD")
+def signId = mavenProperties.getProperty("signing.keyId")
+def signPwd = mavenProperties.getProperty("signing.password")
+def file = mavenProperties.getProperty("signing.secretKeyRingFile")
+
+// http://gradledoc.githang.com/2.0/userguide/signing_plugin.html
+gradle.taskGraph.whenReady { taskGraph ->
+    if (taskGraph.allTasks.any { it instanceof Sign }) {
+        allprojects { ext."signing.keyId" = signId }
+        allprojects { ext."signing.password" = signPwd }
+        allprojects { ext."signing.secretKeyRingFile" = file }
+
+    }
+}
+
+task generateSourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier 'sources'
+}
+
+afterEvaluate {
+//    addMavenProperties()
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = GROUP_ID
+                artifactId = ARTIFACT_ID
+                version = VERSION_NAME
+                // 上传source，这样使用放可以看到方法注释
+                artifact generateSourcesJar
+
+                // Self-explanatory metadata for the most part
+                pom {
+                    name = ARTIFACT_ID
+                    description = POM_DESCRIPTION
+                    // If your project has a dedicated site, use its URL here
+                    url = POM_URL
+                    licenses {
+                        license {
+                            //协议类型，一般默认Apache License2.0的话不用改：
+                            name = 'The Apache License, Version 2.0'
+                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+                    developers {
+                        developer {
+                            id = POM_DEVELOPER_ID
+                            name = POM_DEVELOPER_NAME
+                            email = POM_DEVELOPER_EMAIL
+                        }
+                    }
+                    // Version control info, if you're using GitHub, follow the format as seen here
+                    scm {
+                        //修改成你的Git地址：
+                        connection = POM_SCM_CONNECTION
+                        developerConnection = POM_SCM_DEV_CONNECTION
+                        //分支地址：
+//                        url = 'https://github.com/hezd/FlowLayout/tree/main'
+                        url = POM_SCM_GIT_BRANCH
+                    }
+
+                }
+            }
+        }
+        repositories {
+            // 定义一个 maven 仓库
+            maven {
+                allowInsecureProtocol true
+                // 可以有且仅有一个仓库不指定 name 属性，会隐式设置为 Maven
+                // 根据 versionName 来判断仓库地址
+                url = MAVEN_PRO_URL
+                // 仓库用户名密码
+                credentials {
+                    username = MAVEN_PRO_USERNAME
+                    password = MAVEN_PRO_PASSWORD
+                }
+            }
+        }
+
+    }
+    signing{
+        sign(publishing.publications.release)
+    }
+}
+
