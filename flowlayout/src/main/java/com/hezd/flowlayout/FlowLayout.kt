@@ -7,7 +7,7 @@ import androidx.core.view.children
 import kotlin.math.max
 
 /**
- *
+ *@see <a href="https://hezd.github.io/2021/12/24/%E8%87%AA%E5%AE%9A%E4%B9%89ViewGroup/">代码原理解析</a>
  *@author hezd
  *Create on 2021/12/24 17:08
  */
