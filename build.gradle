@@ -1,8 +1,10 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     repositories {
+//        allowInsecureProtocol true
         google()
         mavenCentral()
+//        maven { url 'https://s01.oss.sonatype.org/content/repositories/snapshots/'}
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.4"

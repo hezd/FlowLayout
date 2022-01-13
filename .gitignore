@@ -15,3 +15,4 @@
 local.properties
 /maven-publish.gradle
 gradle.properties
+/maven.properties
